@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navigation section start -->
+    <nav>
+        <div class="topnav">
+            <a href="index.html">Startpage</a>
+            <a href="aboutme.html">About me</a>
+        </div>
+    </nav>
+    <!-- end of navigation section  -->
+
+    <!-- home section start -->
+    <section class="home">
+        <div class="home-content">
+            <img src="images/me.jpg" alt="a picture of a girl">
+            <!-- Enligt WCAG2.0 att jag använder beskrivning på bilderna -->
+            <div class="home-text">
+                <h2>Kristina Zhou</h2>
+                <h5> A passionate <span class="auto-input"></span></h5> <!-- text kommer ändras -->
+                <br>
+                
+                <br><!-- Enligt WCAG 2.0 att kontrast mellan bakgrund och text är mer än 4.5 -->
+                <a href="mailto:kristina.zhou@gmail.com"  alt="send email to me">Contact me</a>
+                 <a href="aboutme.html" alt="know more about me"> More about me </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of home section start -->
+    <!-- box container of aboutme -->
+    <section class= "box-container">
+            <div class="box1">
+                <h3> My Education </h3>
+                <br>
+                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
+                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
+
+            </div>
+
+            <div class="box2">
+                <h3> My experiences</h3>
+                <br>
+                <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
+                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
+                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
+                    from repetition, injected humour, or non-characteristic words etc. </p>
+
+
+            </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- linked javascript for changing text. Jättesvårt att komma på något själv så jag kollar bara på youtube för att komma på något roligt men koden funkar inte i seperat javascript och jag undrar varför :P-->
+    <script>
+        var Typed = new Typed(".auto-input",
+            {
+                strings: ["UX-designer", "Digital Analyst", "Digital nomad"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+            })
+    </script>
+</body>
+<!-- footer section start -->
+<footer class="site-footer"> Created by Kristina Zhou &#169 2022 </footer>
+
+<!-- end of footer section  -->
+
+</html>

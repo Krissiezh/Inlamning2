@@ -1,0 +1,423 @@
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body{
+      background: rgb(22, 22, 22); 
+      }
+    
+    .header {
+    color: rgb(177, 11, 102);
+    font-size: 35px;
+    }
+    
+    /* navigationbar, meny lyser rosa när man trycker på meny*/
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    
+    }
+    
+    .topnav a:hover {
+      background-color: #75063a;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;}
+  
+    /* end of navigationbar */
+    
+
+    
+    /* style for startpage */
+    .home{
+    width: 100%;
+    padding: 60px 0px;
+    background-color:rgb(22, 22, 22);
+    }
+    
+    .home img{
+    height: auto;
+    width: 380px;
+    border-radius: 10px;
+    }
+   
+    .home-content {
+      width: 1120px;
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      }
+       /* texter på startsida och style h2 */
+
+    .home-text{
+    width: 550px;
+    }
+    
+    .home-text h2{
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #a70b54;
+    
+    }
+    .home-text h5{
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      text-transform:initial;
+      margin-bottom: 20 px;
+      color: #fcfcfc;
+      
+      }
+    
+    .home-text a{
+      margin-top: 30 px;
+      display: inline-block;
+      border-radius: 6px;
+      border: 2px solid #a70b54;
+      font-weight: 600;
+      color: #fcfcfc;
+      padding: 10px 30px;
+      text-decoration: none;
+      background-color: #a70b54;
+      transition: all 0.3s;
+      }
+ /* Knappen är rosa och ändra till vita när man har musen över */
+      .home-text a:hover{
+        background-color: rgb(255, 255, 255);
+        color: #9b0745;
+        text-decoration: none;
+      }
+    /* style for about section*/
+
+    .site-footer {
+      text-align: center;
+      color: darkgray;
+      font-size: 12px;
+      background-color: rgb(22, 22, 22) ;
+      margin-bottom: 0%;
+     }
+
+   /*style for box-container*/
+
+   .box-container {
+     background-color: rgb(22,22,22);
+     display: flex;
+     justify-content: center;
+     flex-flow: wrap;
+     text-align: left;
+     
+
+   }
+   .box1, .box2{
+    width: 550px;
+    height: 300px;
+    background-color: #f5f5f5;
+    margin: 0 5px;  /* om man vill ha utrymme mellan kontainer*/
+    
+   }
+
+   .box1, .box2, h3{
+    font-size: 24px;
+    color: #9b0745;
+    
+  }
+
+   .box1, .box2, p{
+    font-size: 14px;
+    color:rgb(22, 22, 22);
+    text-align:center;
+    
+
+   }
+  
+  
+ /* style for aboutme page and source from https://github.com/codingmarket07/Responsive-Resume-UI-Design*/
+
+ 
+.resume_wrapper{
+	display: flex;
+	width: 800px;
+	margin: 20px 200px;
+	background: #fff;
+	padding: 40px;
+}
+
+.resume_wrapper .resume_left{
+	width: 35%;
+	background: rgb(22, 22, 22);
+}
+
+.resume_wrapper .resume_left .resume_image{
+	width: 60%;
+}
+
+.resume_wrapper .resume_left .resume_image img{
+ width: 250px;
+ height: 360px;
+	display: flex;
+  border-radius: 20px;
+}
+
+.resume_wrapper .resume_title{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+
+.resume_wrapper .resume_left .resume_info{
+	color: #84838b;
+}
+
+.resume_wrapper .resume_left .resume_bottom{
+	padding: 20px 30px;
+}
+
+.resume_wrapper .resume_item{
+	padding: 20px 0;
+	border-bottom: 1px solid #9b0745;
+}
+
+.resume_wrapper  .resume_item:last-child{
+	border-bottom: 0;
+}
+
+.resume_wrapper .resume_left .resume_namerole{
+	display: none;
+}
+
+.resume_wrapper .resume_namerole .name{
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+	letter-spacing: 4px;
+}
+
+.resume_wrapper .resume_left .resume_namerole .role{
+	color: #84838b;
+}
+
+.resume_wrapper .resume_left .resume_contact .resume_info:last-child{
+	 margin-top: 10px;
+}
+
+.resume_wrapper .resume_left .resume_contact .resume_subtitle{
+	color: #fff;
+	margin-bottom: 2px;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list{
+	display: flex;
+	justify-content:space-between;
+	margin-bottom: 8px;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p{
+	  position: relative;
+	  width: 100px;
+    height: 20px;
+    background: #fff;
+    font-size: 11px;
+}
+
+.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p span{	
+  position: absolute;
+	top: 0;
+	left: 0;
+	background: #9b0745;
+	width: 100%;
+	height: 100%;
+} /** visar scala på hur bra man är på vertyget, avancerad men fortfarande behöver lära mig mer...*/
+
+.resume_wrapper .resume_right{
+	width: 65%;
+	padding: 20px 40px;
+	color: #3f3f3f;
+}
+
+.resume_wrapper .resume_right .resume_namerole .name{
+	color: #26252d;
+	font-size: 32px;
+}
+
+.resume_wrapper .resume_right .resume_namerole .role{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.resume_wrapper .resume_right .resume_item .resume_title{
+	color: #26252d;
+}
+
+.resume_wrapper .resume_right .resume_data{
+	display: flex;
+}
+
+.resume_wrapper .resume_right .resume_data .year{
+	padding-right: 35px;
+	width: 115px;
+	position: relative;
+}
+
+.resume_wrapper .resume_right .resume_data .content{
+	padding-left: 35px;
+	margin-bottom: 20px;
+	width: calc(100% - 115px);
+}
+
+.resume_wrapper .resume_right .resume_data .year:before{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 0;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border: 1px solid #26252d;
+	border-radius: 50%;
+}
+
+.resume_wrapper .resume_right .resume_data .year:after{
+	  content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #9b0745;
+}
+
+.resume_wrapper .resume_right .resume_data:last-child .year:after{
+	display: none;
+}
+
+.resume_wrapper .resume_right .resmue_interests .resume_info{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+	font-size: 38px;
+	color: #9b0745;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+     
+   .home-content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    }
+
+   .home-content img { 
+    width: 400px;
+	  height: auto;
+    }
+
+   .home-text {
+     text-align: justify;
+     width: 400px;
+     padding: 30px;
+  
+    }
+   
+    .home-text h2 {
+     font-size: 24px;
+    }
+
+    .home-text h5 {
+      font-size: 18px;
+     }
+   /* Media query for startsida och storleken på texter ändras när storlek minskas */
+
+	.resume_wrapper .resume_right .resume_namerole{
+		display: none;
+	}
+	.resume_wrapper .resume_left .resume_namerole{
+		display: block;
+	}
+	.resume_wrapper{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_left,
+	.resume_wrapper .resume_right{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    }
+
+   .home-content img { 
+    display: none;
+    width: 200px;
+	  height: auto;
+    }
+     /* ta bort bilder när storlek är mindre än 400 px */
+
+   .home-text {
+     text-align:justify;
+     width:fit-content;
+  
+    }
+   
+    .home-text h2 {
+     font-size: 24px;
+    }
+
+    .home-text h5 {
+      font-size: 18px;
+     }
+  /* Media query for startsida, bilden på mig och text syns när storleken ändras men jag väljer ta bort bilden när storlek är mindre än 400 px */
+  
+  
+  
+  
+  
+  
+  .resume_wrapper .resume_right{
+		padding: 20px 30px;
+	}
+	.resume_wrapper .resume_right .resume_data{
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_right .resume_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #9b0745;
+	}
+	.resume_wrapper .resume_right .resume_data .year:before,
+	.resume_wrapper .resume_right .resume_data .year:after{
+		display: none;
+	}
+	.resume_wrapper .resume_right .resume_data .content{
+		width: 100%;
+		padding: 0;
+	}
+	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+		font-size: 24px;
+	}
+}
